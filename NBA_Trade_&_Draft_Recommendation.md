@@ -5,6 +5,7 @@ If you're aiming to **help NBA teams with trade and draft recommendations**, you
 
 ## **1. Define the Trade Recommendation Use Case**
 To make this marketable, the system should provide:
+
 ✅ **Trade Suggestions** – Recommend potential player trades based on team needs and player value.  
 ✅ **Fairness Analysis** – Assess whether a trade is **fair** for both teams.  
 ✅ **Player Fit Analysis** – Suggest players who fit a team’s playing style.  
