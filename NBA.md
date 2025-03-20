@@ -19,7 +19,7 @@ By leveraging **unsupervised techniques like K-Means, PCA, SHAP, and graph-based
 ## **1. INPUTS: Features Considered for Trade Suggestions**  
 Our model processes multiple aspects of NBA player and team performance:  
 
-### **A. Player Performance Metrics** ***(Already made file: "INPUT_Player_Performance.csv")***  
+### **A. Player Performance Metrics** ***(```"INPUT_Player_Performance.csv"```)***  
 **Statistical Attributes (Per 36, Per 100, Advanced Stats):**  
 - **Scoring**: FG%, 3P%, 2P%, eFG%, TS%, PTS  
 - **Playmaking**: AST, AST%, TOV, TOV%  
