@@ -13,10 +13,10 @@ By leveraging **unsupervised techniques like K-Means, PCA, SHAP, and graph-based
 
 ---
 
-## **🔹 1. Inputs: Features Considered for Trade Suggestions**  
+## **1. INPUTS: Features Considered for Trade Suggestions**  
 Our model processes multiple aspects of NBA player and team performance:  
 
-### **A. Player Performance Metrics**  
+### **A. Player Performance Metrics** ***(Already made file: "INPUT_Player_Performance.csv")***  
 **Statistical Attributes (Per 36, Per 100, Advanced Stats):**  
 - **Scoring**: FG%, 3P%, 2P%, eFG%, TS%, PTS  
 - **Playmaking**: AST, AST%, TOV, TOV%  
@@ -24,27 +24,43 @@ Our model processes multiple aspects of NBA player and team performance:
 - **Defense**: STL, BLK, STL%, BLK%, DBPM  
 - **Usage Rate & Impact**: USG%, BPM, WS/48, VORP  
 
-### **B. Team Fit & Trade Value**  
+### **B. Team Fit & Trade Value** ***(Already made file: "INPUT_Player_Trade_Value.csv")***   
 - **Offensive/Defensive Metrics**: ORtg, DRtg, NRtg, On-Off  
 - **Trade Fairness Indicators**:  
   - Change in BPM, WS before/after trade  
   - Net Rating Impact (`NRtg/A`)  
   - Positional Fit (PG%, SG%, SF%, PF%, C%)  
 
-### **C. Salary & Contract Data**  
+### **C. Salary & Contract Data** ***(Already made file: "INPUT_Player_Salary_Contract.csv")***   
 - Current and future salary (`2024-25`, `2025-26`, `Guaranteed`)  
 - Trade flexibility (expiring contracts, cap impact)  
 
-### **D. Playstyle & Clustering Attributes**  
+### **D. Playstyle & Clustering Attributes** ***(Already made file: "INPUT_Playstyle_Clustering.csv")***   
 - Turnover tendencies (`BadPass`, `LostBall`)  
 - Playstyle variations (`OnCourt`, `On-Off`, `DWS`, `OWS`)  
 
 ---
 
-## **🔹 2. Categories: Player Clustering for Trade Interpretation**  
-Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.  
+## **2. Categories: Player Clustering for Trade Interpretation**  
+Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first)
 
-| **Cluster Name**      | **Key Characteristics**                        |  
+1. **First we determine the # of Clusters needed by:**
+- Elbow Method
+- Silhouette Score (SS)
+- Calinski-Harabasz Index (CHI)
+- Davies-Bouldin Index (DBI)
+- Gap Statistic: Compares WCSS to a null reference distribution.
+
+2. **Second we apply Clustering Algorithm:**  
+- K-Mean Clustering
+- Hierachial Clustering
+- Gaussian Mixture Models (If neeeded)
+
+3. **Third we Validate and Interpret:**
+- t-SNE/PCA
+
+
+| **POTENTIAL Cluster Name**      | **Key Characteristics**                        |  
 |----------------------|--------------------------------|  
 | **Scoring Guards**   | High PTS, USG%, AST%          |  
 | **3&D Wings**       | High 3P%, DBPM, Low USG%      |  
@@ -54,17 +70,12 @@ Players are **grouped into clusters based on their playstyle and trade impact**,
 | **Role Players**    | Moderate in all categories, high NRtg impact |  
 | **All-Stars/Superstars** | High BPM, WS/48, PTS  |  
 
-### **🔍 How Are These Clusters Formed?**  
-- **K-Means Clustering** → Identifies **role-based groups** of players  
-- **Hierarchical Clustering** → Detects **similarities in playstyle**  
-- **t-SNE/PCA** → Reduces feature dimensions for visualization  
-
 ---
 
-## **🔹 3. Outputs: Trade Interpretability Metrics**  
+## **3. OUTPUTS: Trade Interpretability Metrics**  
 Since this is an **unsupervised model**, we don’t predict specific trade outcomes but instead generate interpretability metrics:  
 
-### **📌 Key Trade Evaluation Scores**  
+### **Key Trade Evaluation Scores**  
 | **Metric**             | **Purpose** | **Calculation Method** |  
 |----------------------|------------|----------------------|  
 | **Player Fit Score** | Measures how well a player fits a team’s needs | **Cosine Similarity / Distance Metrics** based on ORtg, DRtg, USG% |  
@@ -73,7 +84,7 @@ Since this is an **unsupervised model**, we don’t predict specific trade outco
 
 ---
 
-## **🔹 4. Unsupervised Learning Techniques Used**  
+## **4. Unsupervised Learning Techniques Used**  
 
 | **Method** | **Application** |  
 |------------|----------------|  
@@ -93,7 +104,6 @@ Since this is an **unsupervised model**, we don’t predict specific trade outco
 ---
 
 ## **🚀 Next Steps**  
-Would you like me to:  
 1️⃣ **Run K-Means Clustering to categorize NBA players by role?**  
 2️⃣ **Use SHAP to explain why a trade suggestion makes sense?**  
 3️⃣ **Visualize trade impact using a NetworkX graph?**  
