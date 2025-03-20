@@ -63,7 +63,12 @@ Once key features are selected, we apply the following clustering methods:
 
 ### **C. Validating and Interpreting Clusters**
 To **visualize and interpret** the clusters, we use:  
-- **t-SNE / PCA (Dimensionality Reduction & Visualization)**  
+- **PCA (Principal Component Analysis)**: Reduces high-dimensional player data to 2D/3D for visualization.
+- **t-SNE (t-Distributed Stochastic Neighbor Embedding)**: Another technique for better clustering visualization.
+
+### **D. Trade Interpretability**:
+- **SHAP (SHapley Additive Explanations)**: Explains which features contribute most to trade suggestions.
+- **Graph-Based Models (NetworkX)**: Visualizes player interactions and trade impact using a network of relationships.
 
 ### **D. Potential Cluster Categories & Characteristics**
 | **Cluster Name**       | **Key Characteristics** |
