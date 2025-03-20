@@ -81,8 +81,6 @@ To **visualize and interpret** the clusters, we use:
 | **Role Players**      | Moderate in all categories, high NRtg impact |
 | **All-Stars/Superstars** | High BPM, WS/48, PTS |
 
-⚠️ **NOTE:** **SHAP** (SHapley Additive Explanations) will be used throughout the process **not to predict**, but to **explain what features contribute most to trade suggestions**.
-
 ---
 
 ## **4. OUTPUTS: Trade Interpretability Metrics**  
