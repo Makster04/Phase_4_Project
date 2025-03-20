@@ -119,7 +119,3 @@ Since this is an **unsupervised model**, we do **not predict specific trade outc
 
 ### **Final Thoughts**  
 This **unsupervised approach** allows for transparent, data-driven trade suggestions without relying on **predefined labels**. By using **clustering, dimensionality reduction, and SHAP explanations**, our model provides NBA analysts and teams with a **clear, interpretable trade evaluation system**.
-
----
-
-This version improves **clarity, structure, and readability**, while ensuring no key information is missing. Let me know if you need any refinements! 🚀🏀
