@@ -1,9 +1,9 @@
 # Overview
 ---
 
-# **📌 Unsupervised Interpretability Model for NBA Trade Suggestions**  
+# **Unsupervised Interpretability Model for NBA Trade Suggestions**  
 
-## **🧐 Purpose of the Model**  
+## **Purpose of the Model**  
 The goal of this project is to **enhance the interpretability of NBA trade recommendations** using **unsupervised learning techniques**. Instead of relying on predefined labels or target variables, we use **clustering, dimensionality reduction, and feature importance analysis** to:  
 1. **Identify player roles and trade value categories**  
 2. **Determine team fit based on playing style, impact, and salary**  
