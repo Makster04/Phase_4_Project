@@ -1,4 +1,4 @@
-# Overview
+# Overview (WE ARE NOT DOING A TRADE RECOMENDATIONS SYSTEM MODEL FOR THIS)
 ---
 
 # **Unsupervised Interpretability Model for NBA Trade Suggestions**  
