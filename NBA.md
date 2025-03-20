@@ -42,21 +42,21 @@ Our model processes multiple aspects of NBA player and team performance:
 ---
 
 ## **2. Categories: Player Clustering for Trade Interpretation**  
-Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first)
+Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first). The steps:
 
-1. **First we determine the # of Clusters needed by:**
+1. **Determine the # of Clusters needed by:**
 - Elbow Method
 - Silhouette Score (SS)
 - Calinski-Harabasz Index (CHI)
 - Davies-Bouldin Index (DBI)
 - Gap Statistic: Compares WCSS to a null reference distribution.
 
-2. **Second we apply Clustering Algorithm:**  
+2. **Apply Clustering Algorithm after selecting key features:**  
 - K-Mean Clustering
 - Hierachial Clustering
 - Gaussian Mixture Models (If neeeded)
 
-3. **Third we Validate and Interpret:**
+3. **Validate and Interpret Clusters trhough visualization:**
 - t-SNE/PCA
 
 
