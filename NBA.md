@@ -45,7 +45,10 @@ Our model processes multiple aspects of NBA player and team performance:
 ---
 
 ## **2. Categories: Player Clustering for Trade Interpretation**  
-Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first). The steps: ***(SHAP will also be used throughout the steps)***
+Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first). The steps: 
+
+**KEEP NOTE:** SHAP isn’t used to predict, but to explain what features matter most in trade recommendations.
+
 
 1. **Determine the # of Clusters needed by:**
 - Elbow Method
@@ -98,7 +101,7 @@ Since this is an **unsupervised model**, we don’t predict specific trade outco
 
 ---
 
-## **📌 Summary: Why This Model Matters?**  
+## ** Summary: Why This Model Matters?**  
 - ✅ **Features:** Captures **player stats, team needs, salary constraints**  
 - ✅ **Categories:** Groups players into **role-based clusters** for trade analysis  
 - ✅ **Metrics:** Evaluates **Player Fit, Trade Fairness, and Team Impact**  
@@ -106,9 +109,8 @@ Since this is an **unsupervised model**, we don’t predict specific trade outco
 
 ---
 
-## **🚀 Next Steps**  
+## ** Next Steps**  
 1️⃣ **Run K-Means Clustering to categorize NBA players by role?**  
 2️⃣ **Use SHAP to explain why a trade suggestion makes sense?**  
 3️⃣ **Visualize trade impact using a NetworkX graph?**  
 
-Let me know your next priority! 🚀
