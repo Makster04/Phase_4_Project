@@ -47,8 +47,7 @@ Our model processes multiple aspects of NBA player and team performance:
 ## **2. Categories: Player Clustering for Trade Interpretation**  
 Players are **grouped into clusters based on their playstyle and trade impact**, making trades more interpretable.(We will have to determine number of clusters first). The steps: 
 
-**KEEP NOTE:** SHAP isn’t used to predict, but to explain what features matter most in trade recommendations.
-
+**KEEP NOTE:** SHAP will be used throughout most likely and it isn’t used to predict, but to explain what features matter most in trade recommendations.
 
 1. **Determine the # of Clusters needed by:**
 - Elbow Method
