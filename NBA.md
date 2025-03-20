@@ -3,7 +3,7 @@
 
 # **Unsupervised Interpretability Model for NBA Trade Suggestions**  
 
-(**How its not even Partially Supervised:** *The model relies on clustering, dimensionality reduction, and interpretability techniques to generate player role categories and trade evaluation metrics*)
+(**How its NOT EVEN Partially Supervised:** *The model relies on clustering, dimensionality reduction, and interpretability techniques to generate player role categories and trade evaluation metrics*)
 
 --- 
 ## **Purpose of the Model**  
