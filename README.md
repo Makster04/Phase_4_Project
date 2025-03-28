@@ -101,6 +101,22 @@ Cluster NBA players by archetypes to better understand their roles and potential
 
 ---
 
+## Next Steps
+
+1. **Time-Series or Seasonal Context:**
+- Incorporate season-over-season player data to capture development or regression.
+- Evaluate trade scenarios over multiple seasons (e.g., contract year impact, aging curves).
+  
+2. **Launch a Counter Factual Trade Simulator (Advanced Recommendations System):**
+- Build a tool that answers: “What would happen if Team A made this trade?”
+- Use models to simulate Net Rating changes or Win Shares impact post-trade.
+
+3. **Reinforcement Learning (Long Term Planning):**
+- Explore trade chains: “If I trade this guy now, what should I do next season?”
+- Use something like multi-agent systems for long-term cap & roster planning.
+  
+---
+
 ## Business Recommendations
 
 1. **Subjectivity → Objectivity:**  
